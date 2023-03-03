@@ -91,6 +91,9 @@ const InternalButton: React.ForwardRefRenderFunction<
   HTMLButtonElement | HTMLAnchorElement,
   ButtonProps
 > = (props, ref) => {
+    React.useEffect(() => {
+        console.log('james was here')
+    },[])
   const {
     loading = false,
     prefixCls: customizePrefixCls,
